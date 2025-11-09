@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "vercel-build": "composer install --no-dev --optimize-autoloader && php artisan config:cache && php artisan route:cache && php artisan view:cache",
     "dev": "vite",
     "format": "prettier --write .",
     "check-format": "prettier --check ."
