@@ -5,12 +5,15 @@
     "api/index.php": { "runtime": "vercel-php@0.7.4" }
   },
   "routes": [
+    { "src": "/build/(.*)", "dest": "/public/build/$1" },
     { "src": "/assets/(.*)", "dest": "/public/mazer/dist/assets/$1" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ],
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "true",
+    "SESSION_DRIVER": "cookie",
+    "CACHE_DRIVER": "array",
     "APP_URL": "",
 
     "APP_CONFIG_CACHE": "/tmp/config.php",
