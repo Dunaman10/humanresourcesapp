@@ -13,7 +13,7 @@
 
         <!-- Scripts -->
         {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-        @vite(['public/build/assets/app-D68rlCir.css', 'public/build/assets/app-PZj53Sw7.js'])
+        @vite(['/public/build/assets/app-D68rlCir.css', '/public/build/assets/app-PZj53Sw7.js'])
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
