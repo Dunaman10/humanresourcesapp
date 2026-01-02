@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "framework": null,
+  "functions": {
+    "api/index.php": { "runtime": "vercel-php@0.7.2" }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
+  ],
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "true",
+    "APP_URL": "",
+    "APP_KEY": "base64:xf5hJ1WH3idIvr7s3x90kpqGd/vxXuezy/KEd2wExHw=",
+    "DB_CONNECTION": "mysql",
+    "DB_HOST": "6emllb.h.filess.io",
+    "DB_PORT": "3307",
+    "DB_DATABASE": "humanresourcesapp_breathing",
+    "DB_USERNAME": "humanresourcesapp_breathing",
+    "DB_PASSWORD": "d2207acfd4fa1b00f9783d3720f287f2aa2313b3",
+
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_EVENTS_CACHE": "/tmp/events.php",
+    "APP_PACKAGES_CACHE": "/tmp/packages.php",
+    "APP_ROUTES_CACHE": "/tmp/routes.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "VIEW_COMPILED_PATH": "/tmp",
+
+    "CACHE_DRIVER": "array",
+    "LOG_CHANNEL": "stderr",
+    "SESSION_DRIVER": "cookie"
+  }
+}
